@@ -1,0 +1,120 @@
+openapi: 3.0.4
+info:
+  title: Wordle Helper
+  description: Wordle Helper finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/wordlehelper:
+    get:
+      summary: Find Wordle Words
+      description: Wordle Helper finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
+      operationId: wordlehelper
+      parameters:
+      - name: green
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Correct letters with positions (e.g., A1 means A at position 1)
+        example: A1,E5
+      - name: yellow
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Letters in word but wrong position (e.g., R2 means R not at position 2)
+        example: R2,O3
+      - name: gray
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Letters not in the word
+        example: STLN
+      - name: pattern
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Pattern with known letters (use _ for unknown)
+        example: A___E
+      - name: limit
+        default: '25'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: Maximum number of suggestions (1-100)
+        example: '25'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  matchCount: 13
+                  suggestions:
+                  - ayrie
+                  - adore
+                  - aigre
+                  - afore
+                  - adure
+                  - afire
+                  - argue
+                  - aerie
+                  - azure
+                  - arace
+                  - agree
+                  - aware
+                  - arere
+                  filters:
+                    green:
+                      '0': a
+                      '4': e
+                    yellow:
+                    - r
+                    gray:
+                    - s
+                    - t
+                    - l
+                    - n
+                  pattern: A___E
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
