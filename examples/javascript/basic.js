@@ -13,16 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/wordlehelper';
  */
 async function callWordleHelperAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            green: &#x27;A1,E5&#x27;,
-            yellow: &#x27;R2,O3&#x27;,
-            gray: &#x27;STLN&#x27;,
-            pattern: &#x27;A___E&#x27;,
-            limit: 25
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
