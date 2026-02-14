@@ -17,14 +17,11 @@ def call_wordlehelper_api():
     Make a GET request to the Wordle Helper API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;green&#x27;: &#x27;A1,E5&#x27;, &#x27;yellow&#x27;: &#x27;R2,O3&#x27;, &#x27;gray&#x27;: &#x27;STLN&#x27;, &#x27;pattern&#x27;: &#x27;A___E&#x27;, &#x27;limit&#x27;: 25}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
