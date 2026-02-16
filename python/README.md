@@ -44,7 +44,13 @@ from apiverve_wordlehelper.apiClient import WordlehelperAPIClient
 # Initialize the client with your APIVerve API key
 api = WordlehelperAPIClient("[YOUR_API_KEY]")
 
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 
 try:
     # Make the API call
@@ -82,7 +88,13 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 ```
 
 ###### Simple Request
@@ -151,7 +163,13 @@ from apiverve_wordlehelper.apiClient import WordlehelperAPIClient, WordlehelperA
 
 api = WordlehelperAPIClient("[YOUR_API_KEY]")
 
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 
 try:
     result = api.execute(query)
@@ -172,7 +190,13 @@ from apiverve_wordlehelper.apiClient import WordlehelperAPIClient, WordlehelperA
 
 api = WordlehelperAPIClient("[YOUR_API_KEY]")
 
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 
 try:
     result = api.execute(query)
@@ -206,7 +230,13 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_wordlehelper.apiClient import WordlehelperAPIClient, WordlehelperAPIClientError
 
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 
 # Using context manager ensures proper cleanup
 with WordlehelperAPIClient("[YOUR_API_KEY]") as api:
@@ -232,7 +262,13 @@ from apiverve_wordlehelper.apiClient import WordlehelperAPIClient
 # Enable debug mode
 api = WordlehelperAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -247,8 +283,15 @@ from apiverve_wordlehelper.apiClient import WordlehelperAPIClient
 
 api = WordlehelperAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "green": "A1,E5",
+    "yellow": "R2,O3",
+    "gray": "STLN",
+    "pattern": "A___E",
+    "limit": 25
+}
+
 try:
-    query = { "green": "A1,E5", "yellow": "R2,O3", "gray": "STLN", "pattern": "A___E", "limit": 25 }
     result = api.execute(query)
     print(result)
 finally:
