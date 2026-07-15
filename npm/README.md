@@ -134,21 +134,19 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "matchCount": 13,
+    "matchCount": 11,
     "suggestions": [
-      "ayrie",
       "adore",
-      "aigre",
       "afore",
-      "adure",
       "afire",
       "argue",
       "aerie",
       "azure",
-      "arace",
+      "aurae",
+      "arame",
       "agree",
       "aware",
-      "arere"
+      "areae"
     ],
     "filters": {
       "green": {
