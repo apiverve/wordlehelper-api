@@ -12,8 +12,16 @@ public class BasicExample {
         WordleHelperAPIClient client = new WordleHelperAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Query parameters
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;green&quot;, &quot;A1,E5&quot;);
+        parameters.put(&quot;yellow&quot;, &quot;R2,O3&quot;);
+        parameters.put(&quot;gray&quot;, &quot;STLN&quot;);
+        parameters.put(&quot;pattern&quot;, &quot;A___E&quot;);
+        parameters.put(&quot;limit&quot;, 25);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
