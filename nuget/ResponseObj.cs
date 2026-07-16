@@ -25,12 +25,15 @@ namespace APIVerve.API.WordleHelper
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("matchCount")]
-        public long MatchCount { get; set; }
+        public long? MatchCount { get; set; }
 
         [JsonProperty("suggestions")]
         public string[] Suggestions { get; set; }
@@ -52,5 +55,17 @@ namespace APIVerve.API.WordleHelper
 
         [JsonProperty("gray")]
         public string[] Gray { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
