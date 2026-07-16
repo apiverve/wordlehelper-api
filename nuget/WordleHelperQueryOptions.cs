@@ -38,6 +38,6 @@ namespace APIVerve.API.WordleHelper
         /// Maximum number of suggestions
         /// </summary>
         [JsonProperty("limit")]
-        public string Limit { get; set; }
+        public int? Limit { get; set; }
     }
 }
