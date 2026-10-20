@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/wordlehelper",
-  "version": "1.2.0",
-  "description": "Wordle Helper finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.",
+  "version": "1.2.2",
+  "description": "Wordle Helper is a Wordle solver API that finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "wordle helper", "wordle solver", "word game", "five letter words", "word puzzle"
+    "wordle api", "wordle solver api", "wordle helper", "wordle solver", "wordle hints"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/wordlehelper-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/wordlehelper?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/wordlehelper?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
