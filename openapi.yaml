@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Wordle Helper
   description: >-
-    Wordle Helper finds possible 5-letter word solutions based on known letter
-    positions, letters in wrong positions, and eliminated letters.
+    Wordle Helper is a Wordle solver API that finds possible 5-letter word
+    solutions based on known letter positions, letters in wrong positions, and
+    eliminated letters.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/wordlehelper:
     get:
-      summary: Find Wordle Words
+      summary: Wordle Helper
       description: Find possible Wordle solutions based on clues
       operationId: wordlehelper
       parameters:
