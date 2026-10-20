@@ -1,13 +1,12 @@
-WordleHelper API
+Wordle Helper API
 ============
 
-Wordle Helper finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
+Wordle Helper is a Wordle solver API that finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [WordleHelper API](https://apiverve.com/marketplace/wordlehelper?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.WordleHelper.svg)](https://www.nuget.org/packages/APIVerve.API.WordleHelper)
+
+This is a .NET wrapper for the [Wordle Helper API](https://apiverve.com/marketplace/wordlehelper?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the wordlehelper API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Wordle Helper API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,12 +60,12 @@ class Program
         var apiClient = new WordleHelperAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new WordleHelperQueryOptions {
-    Green = "A1,E5",
-    Yellow = "R2,O3",
-    Gray = "STLN",
-    Pattern = "A___E",
-    Limit = 25
-};
+            Green = "A1,E5",
+            Yellow = "R2,O3",
+            Gray = "STLN",
+            Pattern = "A___E",
+            Limit = 25
+        };
 
         // Make the API call
         try
@@ -96,13 +95,13 @@ class Program
 
 ## Usage
 
-The WordleHelper API documentation is found here: [https://docs.apiverve.com/ref/wordlehelper](https://docs.apiverve.com/ref/wordlehelper?utm_source=nuget&utm_medium=readme).
+The Wordle Helper API documentation is found here: [https://docs.apiverve.com/ref/wordlehelper](https://docs.apiverve.com/ref/wordlehelper?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-WordleHelper API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Wordle Helper API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -129,12 +128,12 @@ public class Example
         var apiClient = new WordleHelperAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new WordleHelperQueryOptions {
-    Green = "A1,E5",
-    Yellow = "R2,O3",
-    Gray = "STLN",
-    Pattern = "A___E",
-    Limit = 25
-};
+            Green = "A1,E5",
+            Yellow = "R2,O3",
+            Gray = "STLN",
+            Pattern = "A___E",
+            Limit = 25
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -165,12 +164,12 @@ public class Example
         var apiClient = new WordleHelperAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new WordleHelperQueryOptions {
-    Green = "A1,E5",
-    Yellow = "R2,O3",
-    Gray = "STLN",
-    Pattern = "A___E",
-    Limit = 25
-};
+            Green = "A1,E5",
+            Yellow = "R2,O3",
+            Gray = "STLN",
+            Pattern = "A___E",
+            Limit = 25
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -206,12 +205,12 @@ public class Example
         var apiClient = new WordleHelperAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new WordleHelperQueryOptions {
-    Green = "A1,E5",
-    Yellow = "R2,O3",
-    Gray = "STLN",
-    Pattern = "A___E",
-    Limit = 25
-};
+            Green = "A1,E5",
+            Yellow = "R2,O3",
+            Gray = "STLN",
+            Pattern = "A___E",
+            Limit = 25
+        };
 
         try
         {
@@ -266,12 +265,12 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new WordleHelperQueryOptions {
-    Green = "A1,E5",
-    Yellow = "R2,O3",
-    Gray = "STLN",
-    Pattern = "A___E",
-    Limit = 25
-};
+            Green = "A1,E5",
+            Yellow = "R2,O3",
+            Gray = "STLN",
+            Pattern = "A___E",
+            Limit = 25
+        };
 
         try
         {
@@ -441,7 +440,7 @@ using (var apiClient = new WordleHelperAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -452,12 +451,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
