@@ -1,13 +1,12 @@
 Wordle Helper API
 ============
 
-Wordle Helper finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
+Wordle Helper is a Wordle solver API that finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Wordle Helper API](https://apiverve.com/marketplace/wordlehelper?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-wordlehelper.svg)](https://pypi.org/project/apiverve-wordlehelper/)
+
+This is a Python wrapper for the [Wordle Helper API](https://apiverve.com/marketplace/wordlehelper?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-wordlehelper
 
 ## Configuration
 
-Before using the wordlehelper API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Wordle Helper API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -66,7 +65,7 @@ except Exception as e:
 
 ## Usage
 
-The Wordle Helper API documentation is found here: [https://docs.apiverve.com/ref/wordlehelper](https://docs.apiverve.com/ref/wordlehelper?utm_source=pypi&utm_medium=readme).
+The Wordle Helper API documentation is found here: [https://docs.apiverve.com/ref/wordlehelper](https://docs.apiverve.com/ref/wordlehelper?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -114,21 +113,19 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "matchCount": 13,
+    "matchCount": 11,
     "suggestions": [
-      "ayrie",
       "adore",
-      "aigre",
       "afore",
-      "adure",
       "afire",
       "argue",
       "aerie",
       "azure",
-      "arace",
+      "aurae",
+      "arame",
       "agree",
       "aware",
-      "arere"
+      "areae"
     ],
     "filters": {
       "green": {
@@ -303,7 +300,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -314,12 +311,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
