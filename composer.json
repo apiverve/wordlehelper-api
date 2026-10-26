@@ -1,7 +1,7 @@
 {
     "name": "apiverve/wordlehelper",
     "description": "Wordle Helper is a Wordle solver API that finds possible 5-letter word solutions based on known letter positions, letters in wrong positions, and eliminated letters.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
