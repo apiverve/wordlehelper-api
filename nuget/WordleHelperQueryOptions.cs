@@ -17,13 +17,13 @@ namespace APIVerve.API.WordleHelper
         public string Green { get; set; }
 
         /// <summary>
-        /// Letters in word but wrong position (e.g., R2 means R not at position 2)
+        /// Letters in word but wrong position (e.g., R2 means R not at position 2); each entry is a letter with an optional position 1-5
         /// </summary>
         [JsonProperty("yellow")]
         public string Yellow { get; set; }
 
         /// <summary>
-        /// Letters not in the word
+        /// Letters not in the word. A letter that is also green or yellow is capped at the number of times it is marked green or yellow, as in Wordle's duplicate-letter rule
         /// </summary>
         [JsonProperty("gray")]
         public string Gray { get; set; }
